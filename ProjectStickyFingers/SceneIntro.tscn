@@ -2,7 +2,7 @@
 
 [ext_resource path="res://SceneIntro.gd" type="Script" id=1]
 
-[node name="SceneIntro" type="CanvasLayer" index="0"]
+[node name="SceneIntro" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )

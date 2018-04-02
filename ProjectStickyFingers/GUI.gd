@@ -1,21 +1,25 @@
 extends CanvasLayer
 
 
-export (PackedScene) var GUI
-
-
-signal menu_clicked
-signal menu2_clicked
-signal menu3_clicked
-
-
 func _ready():
+	get_node("ButtonStart").connect("pressed", self, "_on_ButtonStart_pressed")
+	get_node("ButtonOptions").connect("pressed", self, "_on_ButtonOptions_pressed")
+	get_node("ButtonQuit").connect("pressed", self, "_on_ButtonQuit_pressed")
+
+
+func _process( delta ):
 	pass
-	
-func start_game():
-	
-	pass
+
 
 func _on_ButtonStart_pressed():
-	start_game()
+	
 	pass
+
+
+func _on_ButtonOptions_pressed():
+	pass
+
+	
+func _on_ButtonQuit_pressed():
+	pass
+	

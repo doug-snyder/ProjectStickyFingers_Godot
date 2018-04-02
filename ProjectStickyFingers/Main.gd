@@ -1,9 +1,12 @@
 extends Node2D
 
 
-var placeholder
+export (PackedScene) var placeholder
 
 
 func _ready():
 	pass
-	
+
+
+func _process( delta ):
+	pass
