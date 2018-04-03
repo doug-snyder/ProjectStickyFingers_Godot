@@ -6,6 +6,7 @@
 [node name="Main" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 placeholder = null
 
 [node name="GUI" parent="." index="0" instance=ExtResource( 2 )]
