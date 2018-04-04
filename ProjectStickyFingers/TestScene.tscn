@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://SceneIntro.gd" type="Script" id=1]
+[ext_resource path="res://TestScene.gd" type="Script" id=1]
 
-[node name="SceneIntro" type="CanvasLayer"]
+[node name="CanvasLayer" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
