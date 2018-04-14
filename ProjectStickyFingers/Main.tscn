@@ -3,11 +3,11 @@
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://GUI_StartMenu.tscn" type="PackedScene" id=2]
 
-[node name="Main" type="Node2D" index="0"]
+[node name="Main" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
-[node name="CanvasLayer" parent="." index="0" instance=ExtResource( 2 )]
+[node name="GUI_StartMenu" parent="." index="0" instance=ExtResource( 2 )]
 
 

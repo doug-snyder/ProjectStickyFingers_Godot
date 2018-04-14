@@ -5,5 +5,14 @@ extends Node2D
 
 # Use CONSTANT_CASE for all other const.
 
+
 func _ready():
 	pass
+
+func _on_StartButton_pressed():
+	get_tree().change_scene( "res://TestScene.tscn" )
+	
+func _on_ExitButton_pressed():
+	# TODO: Change back to quit()
+	#get_tree().change_scene( "res://Main.tscn" )
+	get_tree().quit()

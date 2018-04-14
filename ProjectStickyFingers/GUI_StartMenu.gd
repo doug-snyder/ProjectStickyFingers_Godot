@@ -3,16 +3,18 @@ extends CanvasLayer
 var start_button_path = "Center/VBox1/ButtonsBox/StartButton"
 var exit_button_path = "Center/VBox1/ButtonsBox/ExitButton"
 
-# ------------------------- Markers at 0, 80, & 100 ------------------------- # ----------------- #
+onready var parent = get_node( "/root/Main" )
+
+
 func _ready():
 	get_node( start_button_path ).connect( "pressed", self, "_on_StartButton_pressed" )
-	get_node( exit_button_path ).connect( "pressed", self, "_on_QuitButton_pressed" )
-
-func _on_StartButton_pressed():
-	get_tree().change_scene( "res://TestScene.tscn" )
+	get_node( exit_button_path ).connect( "pressed", self, "_on_ExitButton_pressed" )
 	
-func _on_QuitButton_pressed():
-	# TODO: Change back to quit()
-	get_tree().change_scene( "res://Main.tscn" )
-	#get_tree().quit()
+	#parent = get_tree().get( "res://Main.tscn" )
+	
+func _on_StartButton_pressed():
+	parent._on_StartButton_pressed()
+
+func _on_ExitButton_pressed():
+	parent._on_ExitButton_pressed()
 	
