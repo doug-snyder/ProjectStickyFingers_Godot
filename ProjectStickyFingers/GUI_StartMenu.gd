@@ -10,8 +10,6 @@ func _ready():
 	get_node( start_button_path ).connect( "pressed", self, "_on_StartButton_pressed" )
 	get_node( exit_button_path ).connect( "pressed", self, "_on_ExitButton_pressed" )
 	
-	#parent = get_tree().get( "res://Main.tscn" )
-	
 func _on_StartButton_pressed():
 	parent._on_StartButton_pressed()
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://TestScene.gd" type="Script" id=1]
+[ext_resource path="res://GUI_TestScene.gd" type="Script" id=1]
 [ext_resource path="res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Timer.gd" type="Script" id=3]
 
@@ -20,7 +20,7 @@ use_filter = false
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="CanvasLayer" type="CanvasLayer" index="0"]
+[node name="GUI_TestScene" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -83,8 +83,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 2
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.882813, 0.634264, 0.0517273, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 0.519333 )
 custom_constants/line_spacing = 0
 text = "Time"
 align = 1
@@ -112,7 +110,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 8
 custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.882813, 0.634264, 0.0517273, 1 )
 text = "00:00"
 percent_visible = 1.0
 lines_skipped = 0

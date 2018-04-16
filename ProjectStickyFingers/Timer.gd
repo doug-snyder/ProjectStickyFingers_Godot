@@ -1,11 +1,7 @@
 extends Label
 
-#var time
-
 
 func _ready():
-	#time = OS.get_time()
-	#self.text = time.values()
 	pass
 
 func _process(delta):

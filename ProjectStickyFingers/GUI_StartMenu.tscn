@@ -84,8 +84,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 0.882813, 0.634264, 0.0517273, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 0.519333 )
 text = "Project: Sticky Fingers"
 percent_visible = 1.0
 lines_skipped = 0
@@ -129,7 +127,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.882813, 0.634264, 0.0517273, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -157,7 +154,6 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.882813, 0.634264, 0.0517273, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -165,7 +161,7 @@ group = null
 text = "EXIT"
 flat = false
 align = 1
-_sections_unfolded = [ "custom_colors" ]
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 [node name="Copyright" type="Label" parent="." index="1"]
 
@@ -182,12 +178,10 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 0
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.882813, 0.634264, 0.0517273, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 0.519333 )
 text = "Copyright 2018 Cold Pants"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Rect", "Size Flags", "custom_fonts" ]
+_sections_unfolded = [ "Rect", "Size Flags", "custom_colors", "custom_fonts" ]
 
 
