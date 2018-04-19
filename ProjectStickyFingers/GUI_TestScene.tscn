@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://GUI_TestScene.gd" type="Script" id=1]
 [ext_resource path="res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Timer.gd" type="Script" id=3]
+[ext_resource path="res://ASSETS/SPRITES/power_symbol.png" type="Texture" id=4]
+[ext_resource path="res://ASSETS/SPRITES/magic04ring.png" type="Texture" id=5]
+[ext_resource path="res://ASSETS/SPRITES/fame_symbol.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -20,14 +23,21 @@ use_filter = false
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="GUI_TestScene" type="CanvasLayer"]
+[node name="GUI_TestScene" type="Control" index="0"]
 
-layer = 1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 1280, 720 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 script = ExtResource( 1 )
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
 [node name="MarginContainer" type="MarginContainer" parent="." index="0"]
 
@@ -35,6 +45,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_min_size = Vector2( 1280, 720 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -45,18 +56,38 @@ custom_constants/margin_right = 10
 custom_constants/margin_top = 10
 custom_constants/margin_left = 10
 custom_constants/margin_bottom = 10
-_sections_unfolded = [ "custom_constants" ]
+_sections_unfolded = [ "Anchor", "Rect", "custom_constants" ]
 
-[node name="TimePanel" type="PanelContainer" parent="MarginContainer" index="0"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 1150.0
+margin_left = 9.0
 margin_top = 10.0
-margin_right = 1250.0
-margin_bottom = 80.0
+margin_right = 1269.0
+margin_bottom = 710.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 10
+alignment = 0
+_sections_unfolded = [ "Margin", "Size Flags", "custom_constants" ]
+
+[node name="TimePanel" type="Panel" parent="MarginContainer/VBoxContainer2" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1160.0
+margin_right = 1260.0
+margin_bottom = 70.0
 rect_min_size = Vector2( 100, 70 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -64,16 +95,33 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "Size Flags" ]
 
-[node name="Time" type="Label" parent="MarginContainer/TimePanel" index="0"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/TimePanel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 100, 70 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+alignment = 0
+_sections_unfolded = [ "Margin", "Rect", "Size Flags", "custom_constants" ]
+
+[node name="Time" type="Label" parent="MarginContainer/VBoxContainer2/TimePanel/VBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 21.0
-margin_top = 7.0
 margin_right = 79.0
 margin_bottom = 33.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -81,19 +129,19 @@ rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
-size_flags_vertical = 2
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
-custom_constants/line_spacing = 0
+custom_constants/line_spacing = 100
 text = "Time"
 align = 1
 valign = 1
 uppercase = true
-percent_visible = 1.0
+percent_visible = -0.166667
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "custom_colors", "custom_constants", "custom_fonts" ]
+_sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_constants" ]
 
-[node name="Timer" type="Label" parent="MarginContainer/TimePanel" index="1"]
+[node name="Timer" type="Label" parent="MarginContainer/VBoxContainer2/TimePanel/VBoxContainer" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -102,19 +150,219 @@ anchor_bottom = 0.0
 margin_left = 21.0
 margin_top = 37.0
 margin_right = 79.0
-margin_bottom = 63.0
+margin_bottom = 70.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
-size_flags_vertical = 8
+size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 text = "00:00"
+align = 1
+valign = 1
+uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 script = ExtResource( 3 )
-_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="MainStatsPanel" type="Panel" parent="MarginContainer/VBoxContainer2" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1160.0
+margin_top = 80.0
+margin_right = 1260.0
+margin_bottom = 210.0
+rect_min_size = Vector2( 100, 130 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+_sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Size Flags", "Theme", "custom_styles" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 3.0
+margin_right = 100.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_constants/separation = 10
+alignment = 0
+_sections_unfolded = [ "Margin", "Rect", "Size Flags", "custom_constants" ]
+
+[node name="PowerStat" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 35.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 35, 35 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 4 )
+stretch_mode = 5
+_sections_unfolded = [ "Margin", "Size Flags" ]
+
+[node name="WealthStat" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 45.0
+margin_right = 35.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 35, 35 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 5 )
+stretch_mode = 5
+_sections_unfolded = [ "Margin" ]
+
+[node name="FameStat" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/VBoxContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 90.0
+margin_right = 35.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 35, 35 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource( 6 )
+stretch_mode = 5
+_sections_unfolded = [ "Margin" ]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 220.0
+margin_right = 400.0
+margin_bottom = 370.0
+rect_min_size = Vector2( 400, 150 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+scroll_horizontal_enabled = true
+scroll_horizontal = 0
+scroll_vertical_enabled = true
+scroll_vertical = 0
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Size Flags" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/ScrollContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 128.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+alignment = 0
+_sections_unfolded = [ "Rect", "Size Flags" ]
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 128.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Some example text."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 18.0
+margin_right = 128.0
+margin_bottom = 32.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "More example text."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer2/ScrollContainer/VBoxContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 36.0
+margin_right = 128.0
+margin_bottom = 50.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "A third."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 
