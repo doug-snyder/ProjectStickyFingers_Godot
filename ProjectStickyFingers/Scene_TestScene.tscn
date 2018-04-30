@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scene_TestScene.gd" type="Script" id=1]
+[ext_resource path="res://GUI_TestScene.tscn" type="PackedScene" id=2]
 
-[node name="Scene_TestScene" type="Node2D"]
+[node name="Scene_TestScene" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="GUI_TestScene" parent="." index="0" instance=ExtResource( 2 )]
+
+margin_right = 1216.0
+margin_bottom = 656.0
 
 
