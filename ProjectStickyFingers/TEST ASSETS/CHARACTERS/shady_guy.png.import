@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/shady_guy.png-d4af0ad1d044525c02f85f2ea0183ab0.stex"
+
+[deps]
+
+source_file="res://TEST ASSETS/CHARACTERS/shady_guy.png"
+source_md5="d6b455e4fecc7039adaecf19056bca0e"
+
+dest_files=[ "res://.import/shady_guy.png-d4af0ad1d044525c02f85f2ea0183ab0.stex" ]
+dest_md5="61194d454099a3a64f4abedd871b0f7d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

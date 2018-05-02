@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/bartender.png-7fcd65a745dc389706e4765b5f496ff2.stex"
+
+[deps]
+
+source_file="res://TEST ASSETS/CHARACTERS/bartender.png"
+source_md5="449972d22dd6bb789f3325778815a326"
+
+dest_files=[ "res://.import/bartender.png-7fcd65a745dc389706e4765b5f496ff2.stex" ]
+dest_md5="3067bac6d80e32e327ef7fd6411358bb"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

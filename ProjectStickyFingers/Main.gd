@@ -16,7 +16,7 @@ func _process( delta ):
 	pass
 
 func _on_StartButton_pressed():
-	get_tree().change_scene( "res://GUI_TestScene.tscn" )
+	get_tree().change_scene( "res://Scene_TestScene.tscn" )
 	
 func _on_ExitButton_pressed():
 	# TODO: Change back to quit()

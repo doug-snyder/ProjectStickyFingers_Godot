@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://GUI_TestScene.gd" type="Script" id=1]
 [ext_resource path="res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=2]
@@ -21,6 +21,30 @@ size = 30
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFontData" id=3]
+
+font_path = "res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 40
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFontData" id=5]
+
+font_path = "res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+
+size = 40
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="GUI_TestScene" type="Control" index="0"]
@@ -60,7 +84,6 @@ _sections_unfolded = [ "Anchor", "Rect", "custom_constants" ]
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -81,7 +104,6 @@ _sections_unfolded = [ "Margin", "Size Flags", "custom_constants" ]
 
 [node name="TimePanel" type="Panel" parent="MarginContainer/VBoxContainer2" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -100,6 +122,7 @@ _sections_unfolded = [ "Rect", "Size Flags" ]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/TimePanel" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -136,7 +159,7 @@ text = "Time"
 align = 1
 valign = 1
 uppercase = true
-percent_visible = -0.166667
+percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_constants" ]
@@ -147,10 +170,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 21.0
-margin_top = 30.0
-margin_right = 79.0
-margin_bottom = 70.0
+margin_left = 20.0
+margin_top = 29.0
+margin_right = 78.0
+margin_bottom = 69.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -170,7 +193,6 @@ _sections_unfolded = [ "Margin", "Rect", "custom_colors", "custom_fonts" ]
 
 [node name="MainStatsPanel" type="Panel" parent="MarginContainer/VBoxContainer2" index="1"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -186,9 +208,9 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-_sections_unfolded = [ "Anchor", "Margin", "Material", "Rect", "Size Flags", "Theme", "custom_styles" ]
+_sections_unfolded = [ "Material", "Rect", "Size Flags", "Theme", "custom_styles" ]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel" index="0"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -202,17 +224,36 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-alignment = 1
-_sections_unfolded = [ "Size Flags" ]
+custom_constants/separation = 10
+alignment = 0
+_sections_unfolded = [ "custom_constants" ]
 
-[node name="PowerStat" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/VBoxContainer" index="0"]
+[node name="StatIcons" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 40.0
-margin_bottom = 40.0
+margin_bottom = 172.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="PowerStatIcon" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer/StatIcons" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 22.0
+margin_right = 40.0
+margin_bottom = 62.0
 rect_min_size = Vector2( 40, 40 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -225,15 +266,15 @@ expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Margin", "Rect", "Size Flags" ]
 
-[node name="WealthStat" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/VBoxContainer" index="1"]
+[node name="WealthStatIcon" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer/StatIcons" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 44.0
+margin_top = 66.0
 margin_right = 40.0
-margin_bottom = 84.0
+margin_bottom = 106.0
 rect_min_size = Vector2( 40, 40 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -246,15 +287,15 @@ expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Margin", "Rect", "Size Flags" ]
 
-[node name="FameStat" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/VBoxContainer" index="2"]
+[node name="FameStatIcon" type="TextureRect" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer/StatIcons" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 88.0
+margin_top = 110.0
 margin_right = 40.0
-margin_bottom = 128.0
+margin_bottom = 150.0
 rect_min_size = Vector2( 40, 40 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -266,6 +307,99 @@ texture = ExtResource( 6 )
 expand = true
 stretch_mode = 0
 _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
+
+[node name="StatNumbers" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_right = 100.0
+margin_bottom = 172.0
+rect_min_size = Vector2( 50, 130 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="PowerStatNumber" type="Label" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer/StatNumbers" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 50.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+text = "X"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_fonts" ]
+
+[node name="WealthStatNumber" type="Label" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer/StatNumbers" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 44.0
+margin_right = 50.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 40, 40 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+text = "X"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_fonts" ]
+
+[node name="FameStatNumber" type="Label" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer/StatNumbers" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 88.0
+margin_right = 50.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 40, 40 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 6 )
+text = "X"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="TextArea" type="Panel" parent="MarginContainer" index="1"]
 
@@ -331,13 +465,10 @@ _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "Scroll", "
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/ScrollContainer" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 128.0
-margin_bottom = 158.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 mouse_filter = 1
@@ -346,184 +477,5 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 alignment = 0
 _sections_unfolded = [ "Rect", "Size Flags" ]
-
-[node name="Label" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 128.0
-margin_bottom = 14.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Some example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label5" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 18.0
-margin_right = 128.0
-margin_bottom = 32.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Some example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label7" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 36.0
-margin_right = 128.0
-margin_bottom = 50.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Some example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label11" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 54.0
-margin_right = 128.0
-margin_bottom = 68.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Some example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label15" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 72.0
-margin_right = 128.0
-margin_bottom = 86.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "Some example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label2" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="5"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 90.0
-margin_right = 128.0
-margin_bottom = 104.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "More example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label6" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="6"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 108.0
-margin_right = 128.0
-margin_bottom = 122.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "More example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label9" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="7"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 126.0
-margin_right = 128.0
-margin_bottom = 140.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "More example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label12" type="Label" parent="MarginContainer/PanelContainer/ScrollContainer/VBoxContainer" index="8"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 144.0
-margin_right = 128.0
-margin_bottom = 158.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
-text = "More example text."
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
 
 
