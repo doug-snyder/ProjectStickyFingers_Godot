@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scene_TestScene.gd" type="Script" id=1]
 [ext_resource path="res://ASSETS/tavern_inside.png" type="Texture" id=2]
 [ext_resource path="res://GUI_TestScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TEST ASSETS/CHARACTERS/bartender.png" type="Texture" id=4]
+[ext_resource path="res://TEST ASSETS/CHARACTERS/proper_lady.png" type="Texture" id=5]
+[ext_resource path="res://TEST ASSETS/CHARACTERS/shady_guy.png" type="Texture" id=6]
 
 [node name="Scene_TestScene" type="Node2D" index="0"]
 
@@ -33,5 +36,23 @@ _sections_unfolded = [ "Pause", "Rect", "Visibility" ]
 
 margin_right = 1216.0
 margin_bottom = 656.0
+
+[node name="bartender" type="Sprite" parent="." index="2"]
+
+position = Vector2( 1017.26, 381.913 )
+scale = Vector2( 1.49723, 1.49723 )
+texture = ExtResource( 4 )
+
+[node name="proper_lady" type="Sprite" parent="." index="3"]
+
+position = Vector2( 741.581, 412.992 )
+scale = Vector2( 1.53248, 1.53248 )
+texture = ExtResource( 5 )
+
+[node name="shady_guy" type="Sprite" parent="." index="4"]
+
+position = Vector2( 433.094, 376.265 )
+scale = Vector2( 0.84184, 0.84184 )
+texture = ExtResource( 6 )
 
 
