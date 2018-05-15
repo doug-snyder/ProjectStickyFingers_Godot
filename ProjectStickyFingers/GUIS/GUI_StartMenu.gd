@@ -10,8 +10,10 @@ func _ready():
 	get_node( start_button_path ).connect( "pressed", self, "_on_StartButton_pressed" )
 	get_node( exit_button_path ).connect( "pressed", self, "_on_ExitButton_pressed" )
 	
+	
 func _on_StartButton_pressed():
 	parent._on_StartButton_pressed()
+
 
 func _on_ExitButton_pressed():
 	parent._on_ExitButton_pressed()

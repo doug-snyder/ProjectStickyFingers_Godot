@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://GUI_TestScene.gd" type="Script" id=1]
+[ext_resource path="res://GUIS/GUI_TestScene.gd" type="Script" id=1]
 [ext_resource path="res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Timer.gd" type="Script" id=3]
+[ext_resource path="res://ENGINE/Timer.gd" type="Script" id=3]
 [ext_resource path="res://ASSETS/SPRITES/power_symbol.png" type="Texture" id=4]
 [ext_resource path="res://ASSETS/SPRITES/magic04ring.png" type="Texture" id=5]
 [ext_resource path="res://ASSETS/SPRITES/fame_symbol.png" type="Texture" id=6]
@@ -47,7 +47,7 @@ use_filter = false
 font_data = SubResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="GUI_TestScene" type="Control" index="0"]
+[node name="GUI_TestScene" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -170,10 +170,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 20.0
-margin_top = 29.0
-margin_right = 78.0
-margin_bottom = 69.0
+margin_left = 21.0
+margin_top = 30.0
+margin_right = 79.0
+margin_bottom = 70.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -235,7 +235,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 40.0
-margin_bottom = 172.0
+margin_bottom = 130.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -251,9 +251,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 22.0
+margin_top = 1.0
 margin_right = 40.0
-margin_bottom = 62.0
+margin_bottom = 41.0
 rect_min_size = Vector2( 40, 40 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -272,9 +272,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 66.0
+margin_top = 45.0
 margin_right = 40.0
-margin_bottom = 106.0
+margin_bottom = 85.0
 rect_min_size = Vector2( 40, 40 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -293,9 +293,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 110.0
+margin_top = 89.0
 margin_right = 40.0
-margin_bottom = 150.0
+margin_bottom = 129.0
 rect_min_size = Vector2( 40, 40 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -316,7 +316,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 50.0
 margin_right = 100.0
-margin_bottom = 172.0
+margin_bottom = 130.0
 rect_min_size = Vector2( 50, 130 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false

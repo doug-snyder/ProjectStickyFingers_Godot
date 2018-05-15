@@ -13,6 +13,5 @@ func _ready():
 	is_properlady = true
 	
 	
-
 func _process():
 	pass

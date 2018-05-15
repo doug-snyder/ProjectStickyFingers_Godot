@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shady_guy.png-d4af0ad1d044525c02f85f2ea0183ab0.stex"
+path="res://.import/label_new_game.png-73d07bc287eb14232cd69ef3403cf9fd.stex"
 
 [deps]
 
-source_file="res://TEST ASSETS/CHARACTERS/shady_guy.png"
-source_md5="d6b455e4fecc7039adaecf19056bca0e"
+source_file="res://ASSETS/TEST ASSETS/UI/label_new_game.png"
+source_md5="8e3273b5f582bb2b38f848e5f9f20e27"
 
-dest_files=[ "res://.import/shady_guy.png-d4af0ad1d044525c02f85f2ea0183ab0.stex" ]
-dest_md5="61194d454099a3a64f4abedd871b0f7d"
+dest_files=[ "res://.import/label_new_game.png-73d07bc287eb14232cd69ef3403cf9fd.stex" ]
+dest_md5="8fb29385f8139b16519e7c75a8dfda0d"
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/proper_lady.png-fd6677b91c7ac514d594cc87acc36629.stex"
+path="res://.import/characters.png-72f71e9d208c65e6004494c0f0df435b.stex"
 
 [deps]
 
-source_file="res://TEST ASSETS/CHARACTERS/proper_lady.png"
-source_md5="5c435d3f93931eca70b3cffe6e62e9f3"
+source_file="res://ASSETS/TEST ASSETS/UI/characters.png"
+source_md5="6a78134c5b7262780350139db7fccfa1"
 
-dest_files=[ "res://.import/proper_lady.png-fd6677b91c7ac514d594cc87acc36629.stex" ]
-dest_md5="aa071e9254ee9527aa4659f309127e27"
+dest_files=[ "res://.import/characters.png-72f71e9d208c65e6004494c0f0df435b.stex" ]
+dest_md5="235271af8149e9b30d3df4d34e2e725c"
 
 [params]
 

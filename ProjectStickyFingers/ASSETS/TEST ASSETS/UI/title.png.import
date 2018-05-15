@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_new_game.png-2d1db64dc2613dd557f02ac3b77fea93.stex"
+path="res://.import/title.png-43592797396e5872d18b5f8f5ac68c24.stex"
 
 [deps]
 
-source_file="res://TEST ASSETS/UI/label_new_game.png"
-source_md5="8e3273b5f582bb2b38f848e5f9f20e27"
+source_file="res://ASSETS/TEST ASSETS/UI/title.png"
+source_md5="b654e0c7a5ed799efe7c6960aa9019d9"
 
-dest_files=[ "res://.import/label_new_game.png-2d1db64dc2613dd557f02ac3b77fea93.stex" ]
-dest_md5="8fb29385f8139b16519e7c75a8dfda0d"
+dest_files=[ "res://.import/title.png-43592797396e5872d18b5f8f5ac68c24.stex" ]
+dest_md5="5081a83ac7264f88fa3b6d15b45b32b4"
 
 [params]
 
