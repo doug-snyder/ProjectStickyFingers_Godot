@@ -17,6 +17,4 @@ func _on_StartButton_pressed():
 	
 	
 func _on_ExitButton_pressed():
-	# TODO: Change back to quit()
-	#get_tree().change_scene( "res://Main.tscn" )
 	get_tree().quit()

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tavern_inside.png-39ea78dfec9ddfb7aa3ebf547e6d44a0.stex"
+path="res://.import/fame_symbol.png-8aa6dce77267654c446fb269e88ae74c.stex"
 
 [deps]
 
-source_file="res://ASSETS/SPRITES/tavern_inside.png"
-source_md5="7fdd5b1aacf413f4ac929948769f0a64"
+source_file="res://GUIS/fame_symbol.png"
+source_md5="add2e81f936915e739a0d3a10131910f"
 
-dest_files=[ "res://.import/tavern_inside.png-39ea78dfec9ddfb7aa3ebf547e6d44a0.stex" ]
-dest_md5="d97a65a6296a7d0614487aaf94a835d1"
+dest_files=[ "res://.import/fame_symbol.png-8aa6dce77267654c446fb269e88ae74c.stex" ]
+dest_md5="2089a3059c38ec88f257bd932d27c4c0"
 
 [params]
 

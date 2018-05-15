@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magic04ring.png-1426d5a6c0194d041f6fbd8743e208fb.stex"
+path="res://.import/power_symbol.png-20f2d6044d56c0118c4815463718c609.stex"
 
 [deps]
 
-source_file="res://ASSETS/SPRITES/magic04ring.png"
-source_md5="7856b09b0becbd7c00195108fcffb1fe"
+source_file="res://GUIS/power_symbol.png"
+source_md5="f064d507bdc4ef3ab91088c883d1b0b8"
 
-dest_files=[ "res://.import/magic04ring.png-1426d5a6c0194d041f6fbd8743e208fb.stex" ]
-dest_md5="43969c215700a89642631fdf621688b2"
+dest_files=[ "res://.import/power_symbol.png-20f2d6044d56c0118c4815463718c609.stex" ]
+dest_md5="078fe210c4e16c6eaf69344f7f06f1eb"
 
 [params]
 

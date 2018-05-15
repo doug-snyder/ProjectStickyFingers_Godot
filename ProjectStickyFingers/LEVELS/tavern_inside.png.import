@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/version.png-a747150f7903be785ee777238e7bf4fd.stex"
+path="res://.import/tavern_inside.png-afb5b6d1529b8a834e97491edbdc0851.stex"
 
 [deps]
 
-source_file="res://ASSETS/TEST ASSETS/UI/version.png"
-source_md5="a712402803c55afb61657bfa53fb6ba7"
+source_file="res://LEVELS/tavern_inside.png"
+source_md5="7fdd5b1aacf413f4ac929948769f0a64"
 
-dest_files=[ "res://.import/version.png-a747150f7903be785ee777238e7bf4fd.stex" ]
-dest_md5="e74b70e705e107da9378cc6d33dc0ccc"
+dest_files=[ "res://.import/tavern_inside.png-afb5b6d1529b8a834e97491edbdc0851.stex" ]
+dest_md5="d97a65a6296a7d0614487aaf94a835d1"
 
 [params]
 

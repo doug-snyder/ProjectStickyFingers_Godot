@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_options.png-9a8cfe93dce0ef1e914f5ca0a3b0e633.stex"
+path="res://.import/iso_tile_dirtpath.png-3823e93998254361f4a7d838e01ef171.stex"
 
 [deps]
 
-source_file="res://ASSETS/TEST ASSETS/UI/label_options.png"
-source_md5="d66fb3657807d3745045b6c72bcfc990"
+source_file="res://ENGINE/iso_tile_dirtpath.png"
+source_md5="447ecef2debe45653bce47757797ebb1"
 
-dest_files=[ "res://.import/label_options.png-9a8cfe93dce0ef1e914f5ca0a3b0e633.stex" ]
-dest_md5="b6e01e6716d496d2f98cf12804b6bf5e"
+dest_files=[ "res://.import/iso_tile_dirtpath.png-3823e93998254361f4a7d838e01ef171.stex" ]
+dest_md5="29389b0a09558c42f3123be3dd1e2501"
 
 [params]
 

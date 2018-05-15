@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://GUIS/GUI_StartMenu.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/FONTS/dynamic_font_romulus_60.tres" type="DynamicFont" id=2]
-[ext_resource path="res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://FONTS/dynamic_font_romulus_60.tres" type="DynamicFont" id=2]
+[ext_resource path="res://FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -20,7 +20,7 @@ use_filter = true
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="GUI_StartMenu" type="CanvasLayer" index="0"]
+[node name="GUI_StartMenu" type="CanvasLayer"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -134,7 +134,7 @@ group = null
 text = "START"
 flat = false
 align = 1
-_sections_unfolded = [ "custom_colors" ]
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
 [node name="ExitButton" type="Button" parent="Center/VBox1/ButtonsBox" index="1"]
 

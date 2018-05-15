@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://GUIS/GUI_TestScene.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://GUI_TestScene.gd" type="Script" id=1]
+[ext_resource path="res://FONTS/romulus - pix3m-d6aokem.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://ENGINE/Timer.gd" type="Script" id=3]
-[ext_resource path="res://ASSETS/SPRITES/power_symbol.png" type="Texture" id=4]
-[ext_resource path="res://ASSETS/SPRITES/magic04ring.png" type="Texture" id=5]
-[ext_resource path="res://ASSETS/SPRITES/fame_symbol.png" type="Texture" id=6]
+[ext_resource path="res://GUIS/power_symbol.png" type="Texture" id=4]
+[ext_resource path="res://GUIS/magic04ring.png" type="Texture" id=5]
+[ext_resource path="res://GUIS/fame_symbol.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -23,31 +23,23 @@ use_filter = false
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="DynamicFontData" id=3]
+[sub_resource type="DynamicFont" id=3]
 
-font_path = "res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf"
+size = 40
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=4]
 
 size = 40
 use_mipmaps = false
 use_filter = false
-font_data = SubResource( 3 )
+font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="DynamicFontData" id=5]
-
-font_path = "res://ASSETS/FONTS/romulus - pix3m-d6aokem.ttf"
-
-[sub_resource type="DynamicFont" id=6]
-
-size = 40
-use_mipmaps = false
-use_filter = false
-font_data = SubResource( 5 )
-_sections_unfolded = [ "Font", "Settings" ]
-
-[node name="GUI_TestScene" type="Control"]
+[node name="GUI_TestScene" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -104,6 +96,7 @@ _sections_unfolded = [ "Margin", "Size Flags", "custom_constants" ]
 
 [node name="TimePanel" type="Panel" parent="MarginContainer/VBoxContainer2" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -122,7 +115,6 @@ _sections_unfolded = [ "Rect", "Size Flags" ]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/TimePanel" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -162,7 +154,7 @@ uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-_sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_constants" ]
+_sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_constants", "custom_fonts" ]
 
 [node name="Timer" type="Label" parent="MarginContainer/VBoxContainer2/TimePanel/VBoxContainer" index="1"]
 
@@ -230,6 +222,7 @@ _sections_unfolded = [ "custom_constants" ]
 
 [node name="StatIcons" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -310,6 +303,7 @@ _sections_unfolded = [ "Anchor", "Margin", "Rect" ]
 
 [node name="StatNumbers" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MainStatsPanel/HBoxContainer" index="1"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -342,7 +336,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "X"
 align = 1
 valign = 1
@@ -367,7 +361,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "X"
 align = 1
 valign = 1
@@ -392,7 +386,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 4 )
 text = "X"
 align = 1
 valign = 1

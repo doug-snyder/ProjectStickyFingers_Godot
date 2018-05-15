@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/characters.png-72f71e9d208c65e6004494c0f0df435b.stex"
+path="res://.import/iso_tile_woodfloor.png-e0cf31b759e042b736bec00709fc7b7e.stex"
 
 [deps]
 
-source_file="res://ASSETS/TEST ASSETS/UI/characters.png"
-source_md5="6a78134c5b7262780350139db7fccfa1"
+source_file="res://ENGINE/iso_tile_woodfloor.png"
+source_md5="410c25c5e268854afb82480941d19bd7"
 
-dest_files=[ "res://.import/characters.png-72f71e9d208c65e6004494c0f0df435b.stex" ]
-dest_md5="235271af8149e9b30d3df4d34e2e725c"
+dest_files=[ "res://.import/iso_tile_woodfloor.png-e0cf31b759e042b736bec00709fc7b7e.stex" ]
+dest_md5="9ed41a2715431eefce8a31e63ef2bae9"
 
 [params]
 

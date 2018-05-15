@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/label_continue.png-1c994d527cabbd5b30731d2d8c85ca72.stex"
+path="res://.import/proper_lady.png-4ccbd0fb6ee15fe0808fc514d833fdce.stex"
 
 [deps]
 
-source_file="res://ASSETS/TEST ASSETS/UI/label_continue.png"
-source_md5="dc8708086c3f7eed7a7a2d61e7fc6489"
+source_file="res://LEVELS/proper_lady.png"
+source_md5="5c435d3f93931eca70b3cffe6e62e9f3"
 
-dest_files=[ "res://.import/label_continue.png-1c994d527cabbd5b30731d2d8c85ca72.stex" ]
-dest_md5="e38a670a171bc8159c9aed39a0a54067"
+dest_files=[ "res://.import/proper_lady.png-4ccbd0fb6ee15fe0808fc514d833fdce.stex" ]
+dest_md5="aa071e9254ee9527aa4659f309127e27"
 
 [params]
 

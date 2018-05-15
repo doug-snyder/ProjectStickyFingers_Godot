@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wealth_symbol.png-45d1e0589f0288f825aebc4311074836.stex"
+path="res://.import/iso_tile_stone_bricks.png-86735bc716b374c777187ca421769bb2.stex"
 
 [deps]
 
-source_file="res://ASSETS/SPRITES/wealth_symbol.png"
-source_md5="a402300b012ebd91f68e4e4515c9a3f8"
+source_file="res://ENGINE/iso_tile_stone_bricks.png"
+source_md5="6e593a76351fa91a1f8baff8071a705e"
 
-dest_files=[ "res://.import/wealth_symbol.png-45d1e0589f0288f825aebc4311074836.stex" ]
-dest_md5="660f9f9c012d27979daec6ba01d1f9de"
+dest_files=[ "res://.import/iso_tile_stone_bricks.png-86735bc716b374c777187ca421769bb2.stex" ]
+dest_md5="f76e5bf30310457ce976f2fb7f2118c6"
 
 [params]
 

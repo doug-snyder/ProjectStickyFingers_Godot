@@ -1,16 +1,13 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scene_TestScene.gd" type="Script" id=1]
-[ext_resource path="res://ASSETS/tavern_inside.png" type="Texture" id=2]
-[ext_resource path="res://GUIS/GUI_TestScene.tscn" type="PackedScene" id=3]
-[ext_resource path="res://ASSETS/TEST ASSETS/CHARACTERS/bartender.png" type="Texture" id=4]
-[ext_resource path="res://ASSETS/TEST ASSETS/CHARACTERS/proper_lady.png" type="Texture" id=5]
-[ext_resource path="res://ASSETS/TEST ASSETS/CHARACTERS/shady_guy.png" type="Texture" id=6]
+[ext_resource path="res://LEVELS/tavern_inside.png" type="Texture" id=2]
+[ext_resource path="res://GUI_TestScene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://LEVELS/bartender.png" type="Texture" id=4]
+[ext_resource path="res://LEVELS/proper_lady.png" type="Texture" id=5]
+[ext_resource path="res://LEVELS/shady_guy.png" type="Texture" id=6]
 
-
-
-
-[node name="Scene_TestScene" type="Node2D" index="0"]
+[node name="Scene_TestScene" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]

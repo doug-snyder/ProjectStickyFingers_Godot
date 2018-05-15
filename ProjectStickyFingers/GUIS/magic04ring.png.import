@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shady_guy.png-146ae72459d5a0797af4eb4d552aee01.stex"
+path="res://.import/magic04ring.png-f5895eb538148123fef3f7cbc2fd23a7.stex"
 
 [deps]
 
-source_file="res://ASSETS/TEST ASSETS/CHARACTERS/shady_guy.png"
-source_md5="d6b455e4fecc7039adaecf19056bca0e"
+source_file="res://GUIS/magic04ring.png"
+source_md5="7856b09b0becbd7c00195108fcffb1fe"
 
-dest_files=[ "res://.import/shady_guy.png-146ae72459d5a0797af4eb4d552aee01.stex" ]
-dest_md5="61194d454099a3a64f4abedd871b0f7d"
+dest_files=[ "res://.import/magic04ring.png-f5895eb538148123fef3f7cbc2fd23a7.stex" ]
+dest_md5="43969c215700a89642631fdf621688b2"
 
 [params]
 
