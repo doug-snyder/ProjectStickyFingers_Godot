@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iso_tile_dirtpath.png-3823e93998254361f4a7d838e01ef171.stex"
+path="res://.import/iso_tile_dirtpath.png-d00edc63b8200516a891ee911b9fc48b.stex"
 
 [deps]
 
-source_file="res://ENGINE/iso_tile_dirtpath.png"
+source_file="res://TILES/iso_tile_dirtpath.png"
 source_md5="447ecef2debe45653bce47757797ebb1"
 
-dest_files=[ "res://.import/iso_tile_dirtpath.png-3823e93998254361f4a7d838e01ef171.stex" ]
+dest_files=[ "res://.import/iso_tile_dirtpath.png-d00edc63b8200516a891ee911b9fc48b.stex" ]
 dest_md5="29389b0a09558c42f3123be3dd1e2501"
 
 [params]

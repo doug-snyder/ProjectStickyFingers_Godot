@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iso_tile_dirt.png-0e179730d4749ff12979206122180026.stex"
+path="res://.import/iso_tile_stone_bricks.png-c4420c099add78bcdc52ac7500503f61.stex"
 
 [deps]
 
-source_file="res://ENGINE/iso_tile_dirt.png"
-source_md5="150e31cd98ca9e30f685873d78f8a058"
+source_file="res://TILES/iso_tile_stone_bricks.png"
+source_md5="6e593a76351fa91a1f8baff8071a705e"
 
-dest_files=[ "res://.import/iso_tile_dirt.png-0e179730d4749ff12979206122180026.stex" ]
-dest_md5="43a64bc0c0b9df1ed91e0fdd92b9b0d2"
+dest_files=[ "res://.import/iso_tile_stone_bricks.png-c4420c099add78bcdc52ac7500503f61.stex" ]
+dest_md5="f76e5bf30310457ce976f2fb7f2118c6"
 
 [params]
 

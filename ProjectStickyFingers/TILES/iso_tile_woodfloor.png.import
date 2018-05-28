@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tavern_inside.png-afb5b6d1529b8a834e97491edbdc0851.stex"
+path="res://.import/iso_tile_woodfloor.png-6b4102227a342dcbfc6249c59a985551.stex"
 
 [deps]
 
-source_file="res://LEVELS/tavern_inside.png"
-source_md5="7fdd5b1aacf413f4ac929948769f0a64"
+source_file="res://TILES/iso_tile_woodfloor.png"
+source_md5="410c25c5e268854afb82480941d19bd7"
 
-dest_files=[ "res://.import/tavern_inside.png-afb5b6d1529b8a834e97491edbdc0851.stex" ]
-dest_md5="d97a65a6296a7d0614487aaf94a835d1"
+dest_files=[ "res://.import/iso_tile_woodfloor.png-6b4102227a342dcbfc6249c59a985551.stex" ]
+dest_md5="9ed41a2715431eefce8a31e63ef2bae9"
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shady_guy.png-0d19b72be0e5841fb52514bea4ba681c.stex"
+path="res://.import/proper_lady.png-c7946eede3f4ae8705dcec124ac2182e.stex"
 
 [deps]
 
-source_file="res://LEVELS/shady_guy.png"
-source_md5="d6b455e4fecc7039adaecf19056bca0e"
+source_file="res://CHARACTERS/proper_lady.png"
+source_md5="5c435d3f93931eca70b3cffe6e62e9f3"
 
-dest_files=[ "res://.import/shady_guy.png-0d19b72be0e5841fb52514bea4ba681c.stex" ]
-dest_md5="61194d454099a3a64f4abedd871b0f7d"
+dest_files=[ "res://.import/proper_lady.png-c7946eede3f4ae8705dcec124ac2182e.stex" ]
+dest_md5="aa071e9254ee9527aa4659f309127e27"
 
 [params]
 

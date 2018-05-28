@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bartender.png-46a0cb7bda537706385d67025185805a.stex"
+path="res://.import/bartender.png-650061f5abc773f983056dc374c24815.stex"
 
 [deps]
 
-source_file="res://LEVELS/bartender.png"
+source_file="res://CHARACTERS/bartender.png"
 source_md5="449972d22dd6bb789f3325778815a326"
 
-dest_files=[ "res://.import/bartender.png-46a0cb7bda537706385d67025185805a.stex" ]
+dest_files=[ "res://.import/bartender.png-650061f5abc773f983056dc374c24815.stex" ]
 dest_md5="3067bac6d80e32e327ef7fd6411358bb"
 
 [params]
