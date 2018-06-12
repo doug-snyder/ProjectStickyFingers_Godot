@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="ProjectStickyFingers"
-run/main_scene="res://SCENES/Main.tscn"
+run/main_scene="res://SCENES/MainMenu/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -23,4 +23,3 @@ window/stretch/mode="2d"
 [rendering]
 
 quality/2d/use_pixel_snap=true
-environment/default_environment="res://default_env.tres"

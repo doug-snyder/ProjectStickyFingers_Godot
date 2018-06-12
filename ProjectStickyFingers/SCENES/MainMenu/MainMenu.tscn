@@ -3,7 +3,6 @@
 [ext_resource path="res://SCENES/MainMenu/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://GUIS/GUI_StartMenu.tscn" type="PackedScene" id=2]
 
-
 [node name="Main" type="Node2D" index="0"]
 
 script = ExtResource( 1 )

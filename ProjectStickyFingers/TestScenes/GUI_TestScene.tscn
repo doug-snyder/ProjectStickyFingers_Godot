@@ -7,7 +7,6 @@
 [ext_resource path="res://GUIS/magic04ring.png" type="Texture" id=5]
 [ext_resource path="res://GUIS/fame_symbol.png" type="Texture" id=6]
 
-
 [sub_resource type="DynamicFont" id=1]
 
 size = 30
@@ -40,7 +39,7 @@ use_filter = false
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="GUI_TestScene" type="Control"]
+[node name="GUI_TestScene" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
