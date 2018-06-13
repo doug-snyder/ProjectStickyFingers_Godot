@@ -2,23 +2,21 @@ extends Node
 
 
 const SPEED = 50
+const UP = Vector2( 0, -1 )
+const DOWN = Vector2( 0, 1 )
+const LEFT = Vector2( -1, 0 )
+const RIGHT = Vector2( 1, 0 )
+const CENTER = Vector2( 0, 0 )
 
-const up = Vector2( 0, -1 )
-const down = Vector2( 0, 1 )
-const left = Vector2( -1, 0 )
-const right = Vector2( 1, 0 )
-const center = Vector2( 0, 0 )
-
-var UP = Input.is_action_pressed( "ui_up" )
-var DOWN = Input.is_action_pressed( "ui_down" )
-var LEFT = Input.is_action_pressed( "ui_left" )
-var RIGHT = Input.is_action_pressed( "ui_right" )
-
-var movement
+var move_direction = CENTER
 
 
 func movement_process():
+	#var UP = Input.is_action_pressed( "ui_up" )
+	#var DOWN = Input.is_action_pressed( "ui_down" )
+	#var LEFT = Input.is_action_pressed( "ui_left" )
+	#var RIGHT = Input.is_action_pressed( "ui_right" )
 	pass
-
-func _physics_process( delta ):
-	movement_process()
+	
+func animation_process():
+	pass
