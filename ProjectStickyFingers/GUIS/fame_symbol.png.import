@@ -7,10 +7,7 @@ path="res://.import/fame_symbol.png-8aa6dce77267654c446fb269e88ae74c.stex"
 [deps]
 
 source_file="res://GUIS/fame_symbol.png"
-source_md5="add2e81f936915e739a0d3a10131910f"
-
 dest_files=[ "res://.import/fame_symbol.png-8aa6dce77267654c446fb269e88ae74c.stex" ]
-dest_md5="2089a3059c38ec88f257bd932d27c4c0"
 
 [params]
 

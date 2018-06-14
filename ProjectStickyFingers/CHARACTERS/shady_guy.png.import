@@ -7,10 +7,7 @@ path="res://.import/shady_guy.png-aa2cdbe3395f197c04aaa72978442382.stex"
 [deps]
 
 source_file="res://CHARACTERS/shady_guy.png"
-source_md5="d6b455e4fecc7039adaecf19056bca0e"
-
 dest_files=[ "res://.import/shady_guy.png-aa2cdbe3395f197c04aaa72978442382.stex" ]
-dest_md5="61194d454099a3a64f4abedd871b0f7d"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/wealth_symbol.png-bd8ab41c0edbb4c01942e40238988362.stex"
 [deps]
 
 source_file="res://GUIS/wealth_symbol.png"
-source_md5="a402300b012ebd91f68e4e4515c9a3f8"
-
 dest_files=[ "res://.import/wealth_symbol.png-bd8ab41c0edbb4c01942e40238988362.stex" ]
-dest_md5="660f9f9c012d27979daec6ba01d1f9de"
 
 [params]
 

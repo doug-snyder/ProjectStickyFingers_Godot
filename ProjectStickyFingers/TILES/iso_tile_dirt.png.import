@@ -7,10 +7,7 @@ path="res://.import/iso_tile_dirt.png-230216f7e19d0d0ac3f058ec36f4836f.stex"
 [deps]
 
 source_file="res://TILES/iso_tile_dirt.png"
-source_md5="150e31cd98ca9e30f685873d78f8a058"
-
 dest_files=[ "res://.import/iso_tile_dirt.png-230216f7e19d0d0ac3f058ec36f4836f.stex" ]
-dest_md5="43a64bc0c0b9df1ed91e0fdd92b9b0d2"
 
 [params]
 

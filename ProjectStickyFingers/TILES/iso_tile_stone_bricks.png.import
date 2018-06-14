@@ -7,10 +7,7 @@ path="res://.import/iso_tile_stone_bricks.png-c4420c099add78bcdc52ac7500503f61.s
 [deps]
 
 source_file="res://TILES/iso_tile_stone_bricks.png"
-source_md5="6e593a76351fa91a1f8baff8071a705e"
-
 dest_files=[ "res://.import/iso_tile_stone_bricks.png-c4420c099add78bcdc52ac7500503f61.stex" ]
-dest_md5="f76e5bf30310457ce976f2fb7f2118c6"
 
 [params]
 

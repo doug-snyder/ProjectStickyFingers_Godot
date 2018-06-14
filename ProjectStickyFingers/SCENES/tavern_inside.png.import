@@ -7,10 +7,7 @@ path="res://.import/tavern_inside.png-af3b5a8b072a6586a320a3f46327059f.stex"
 [deps]
 
 source_file="res://SCENES/tavern_inside.png"
-source_md5="7fdd5b1aacf413f4ac929948769f0a64"
-
 dest_files=[ "res://.import/tavern_inside.png-af3b5a8b072a6586a320a3f46327059f.stex" ]
-dest_md5="d97a65a6296a7d0614487aaf94a835d1"
 
 [params]
 
