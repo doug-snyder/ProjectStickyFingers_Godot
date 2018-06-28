@@ -14,10 +14,10 @@ var facing_direction = DOWN
 
 
 func move():
-	#var UP = Input.is_action_pressed( "ui_up" )
-	#var DOWN = Input.is_action_pressed( "ui_down" )
-	#var LEFT = Input.is_action_pressed( "ui_left" )
-	#var RIGHT = Input.is_action_pressed( "ui_right" )
+	var UP = Input.is_action_pressed( "ui_up" )
+	var DOWN = Input.is_action_pressed( "ui_down" )
+	var LEFT = Input.is_action_pressed( "ui_left" )
+	var RIGHT = Input.is_action_pressed( "ui_right" )
 	pass
 	
 func animation_process():
