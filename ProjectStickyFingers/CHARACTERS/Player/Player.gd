@@ -30,6 +30,11 @@ func move():
 func animate():
 	#
 	pass
+	
+	
+func change_animation():
+	# 
+	pass
 
 
 func _physics_process( delta ):
