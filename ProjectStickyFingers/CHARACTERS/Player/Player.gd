@@ -10,29 +10,27 @@ const LEFT = Vector2( -1, 0 )
 const RIGHT = Vector2( 1, 0 )
 const CENTER = Vector2( 0, 0 )
 
+var movement
+var move_direction = CENTER
+var facing_direction = DOWN
+
 
 func move():
-	var movement = Vector2(CENTER)
+	var move_up = Input.is_action_pressed( "ui_up" )
+	var move_down = Input.is_action_pressed( "ui_down" )
+	var move_left = Input.is_action_pressed( "ui_left" )
+	var move_right = Input.is_action_pressed( "ui_right" )
+		
+	movement = Vector2( (-int(move_left) + int(move_right)), (-int(move_up) + int(move_down)) )
+	move_direction = movement.normalized()
 	
-	if Input.is_action_pressed( "ui_up" ):
-		movement += UP
-		
-	if Input.is_action_pressed( "ui_down" ):
-		movement += DOWN
-		
-	if Input.is_action_pressed( "ui_left" ):
-		movement += LEFT
-		
-	if Input.is_action_pressed( "ui_right" ):
-		movement += RIGHT
-		
-	movement = movement.normalized() * SPEED
-	move_and_slide(movement)
+	move_and_slide( move_direction * SPEED )
 	
 	
-func animation_process():
+func animate():
+	#
 	pass
 
 
-func _physics_process(delta):
+func _physics_process( delta ):
 	move()
