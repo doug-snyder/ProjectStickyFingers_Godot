@@ -28,12 +28,10 @@ func move():
 	
 	
 func animate():
-	#
 	pass
 	
 	
 func change_animation():
-	# 
 	pass
 
 

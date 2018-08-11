@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bartender.png-650061f5abc773f983056dc374c24815.stex"
+path="res://.import/BlueFloor_16x16.png-abc649371f97150cd6ff2e73ec05f9f1.stex"
 
 [deps]
 
-source_file="res://CHARACTERS/bartender.png"
-dest_files=[ "res://.import/bartender.png-650061f5abc773f983056dc374c24815.stex" ]
+source_file="res://TILES/BlueFloor_16x16.png"
+dest_files=[ "res://.import/BlueFloor_16x16.png-abc649371f97150cd6ff2e73ec05f9f1.stex" ]
 
 [params]
 
@@ -16,7 +16,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -25,5 +25,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
