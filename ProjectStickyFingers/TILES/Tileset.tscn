@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TILES/BlueBox_16x16.png" type="Texture" id=1]
+
+[node name="Tileset" type="Node2D"]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="Box" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Animation", "Offset", "Transform" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Box" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Box/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 8, 16, 16, 12, 8, 8, 0, 12 )
+_sections_unfolded = [ "Transform" ]
+
+
